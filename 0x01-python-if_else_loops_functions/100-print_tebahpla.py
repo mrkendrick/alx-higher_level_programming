@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-for ascii_num in range(122, 96, -1):
-	if ascii_num % 2 == 1:
-		ascii_num = ascii_num - 32
-	print("{:c}".format(ascii_num), end='')
+for char in range(122, 96, -1):
+    print("{}".format(chr(char) if char % 2 == 0 else chr(char - 32)), end="")
